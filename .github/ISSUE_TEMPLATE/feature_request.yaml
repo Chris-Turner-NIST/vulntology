@@ -1,8 +1,25 @@
 name: Feature request
 description: Suggest an idea for this project
-labels: ["user story", "enhancement"]
+labels: ["enhancement", "Needs-SubProjectLabel"]
 projects: ["usnistgov/49"]
 body:
+- type: markdown
+  attributes:
+    value: |
+      Thank you for your input on this project! Please fill out the form below to caputure all appropriate details.
+- type: checkbox
+    id: subprojectselect
+    attributes:
+      label: Sub-Project Selection
+      description: Which area/s of the project does this apply?
+      options:
+        - label: Data Model (Objects/Values/Relationships)
+        - label: JSON Schema
+        - label: Vulntology Editor UI
+        - label: Examples/Figures
+        - label: Web site (pages.nist.gov/vulntology/)
+    validations:
+      required: true
 - type: textarea
   id: user-story
   attributes:

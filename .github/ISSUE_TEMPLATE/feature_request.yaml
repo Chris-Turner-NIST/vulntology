@@ -18,7 +18,6 @@ body:
       - label: Vulntology Editor UI
       - label: Examples/Figures
       - label: Web site (pages.nist.gov/vulntology/)
-        required: true
 - type: textarea
   id: user-story
   attributes:

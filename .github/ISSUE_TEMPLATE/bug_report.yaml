@@ -1,13 +1,24 @@
 name: Bug Report
 description: File a bug report
 title: "[Bug]: "
-labels: ["bug"]
+labels: ["bug", "Needs-SubProjectLabel"]
 projects: ["usnistgov/49"]
 body:
   - type: markdown
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
+  - type: checkboxes
+  id: subprojectselect
+  attributes:
+    label: Sub-Project Selection
+    description: Which area/s of the project does this apply?
+    options:
+      - label: Data Model (Objects/Values/Relationships)
+      - label: JSON Schema
+      - label: Vulntology Editor UI
+      - label: Examples/Figures
+      - label: Web site (pages.nist.gov/vulntology/)
   - type: textarea
     id: what-happened
     attributes:
